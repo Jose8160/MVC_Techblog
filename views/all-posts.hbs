@@ -1,0 +1,22 @@
+<div>
+  {{#each posts}}
+    <div class="card">
+      <div class="card-header">
+        <h4><a href="/post/{{id}}">{{title}}</a></h4>
+
+        <div class="col-md-4">
+          posted by
+          {{User.username}}
+        </div>
+      </div>
+      <div class="card-body">
+        {{body}}
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+{{!-- hbs views
+new post, editpost, view post --}}
+
+{{!-- postroute, comment route, userroute --}}
